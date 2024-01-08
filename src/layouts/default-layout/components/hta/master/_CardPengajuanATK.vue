@@ -3,12 +3,16 @@ import "form-wizard-vue3/dist/form-wizard-vue3.css";
 import Wizard from "form-wizard-vue3";
 import { reactive, ref } from "vue";
 import TextEditor from "@/layouts/default-layout/components/hta/editor/_TextEditor.vue";
+import KTModal1 from "@/layouts/default-layout/components/hta/modals/_TambahProduk.vue";
+import KTModal2 from "@/layouts/default-layout/components/hta/modals/_TambahLiterasi.vue";
 
 export default {
   name: "App",
   components: {
     Wizard,
     TextEditor,
+    KTModal1,
+    KTModal2,
   },
 
   data() {
@@ -65,6 +69,8 @@ export default {
       alat,
       options,
       isLoading,
+      KTModal1,
+      KTModal2,
     };
   },
 };
@@ -518,5 +524,7 @@ export default {
         </div>
       </div>
     </div>
+    <KTModal1></KTModal1>
+    <KTModal2></KTModal2>
   </section>
 </template>
