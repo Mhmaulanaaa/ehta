@@ -1,8 +1,7 @@
 <template>
   <!--begin::Toolbar wrapper-->
   <div class="d-flex flex-shrink-0">
-    <!--begin::Invite user-->
-    <div class="d-flex ms-3">
+    <!-- <div class="d-flex ms-3">
       <a
         href="#"
         class="btn btn-flex flex-center bg-body btn-color-gray-700 btn-active-color-primary w-40px w-md-auto h-40px px-0 px-md-6"
@@ -12,11 +11,11 @@
         <KTIcon icon-name="plus" icon-class="fs-2 fs-primary me-0 me-md-2" />
         <span class="d-none d-md-inline">New Member</span>
       </a>
-    </div>
+    </div> -->
     <!--end::Invite user-->
 
     <!--begin::Create app-->
-    <div class="d-flex ms-3">
+    <!-- <div class="d-flex ms-3">
       <a
         href="#"
         class="btn btn-flex flex-center bg-body btn-color-gray-700 btn-active-color-primary w-40px w-md-auto h-40px px-0 px-md-6"
@@ -27,8 +26,30 @@
         <KTIcon icon-name="document" icon-class="fs-2 fs-primary me-0 me-md-2" />
         <span class="d-none d-md-inline">New App</span>
       </a>
-    </div>
+    </div> -->
     <!--end::Create app-->
+
+    <div class="app-navbar-item ms-1 ms-md-3" id="kt_header_user_menu_toggle">
+      <!--begin::Menu wrapper-->
+      <div
+        class="cursor-pointer symbol symbol-30px symbol-md-40px"
+        data-kt-menu-trigger="click"
+        data-kt-menu-attach="parent"
+        data-kt-menu-placement="bottom-end"
+      >
+        <img :src="getAssetPath('media/avatars/300-1.jpg')" alt="metronic" />
+
+        <!-- <img
+          v-if="isFotoPegawai == `null`"
+          :src="getAssetPath('images/icon/user.jpeg')"
+          alt="user"
+        />
+        <img v-else id="foto_pegawai" alt="foto_pegawai" :src="linkFoto" />
+        &nbsp;<label class="fs-6 fw-semibold text-primary">{{ nama }}</label> -->
+      </div>
+      <KTUserMenu></KTUserMenu>
+      <!--end::Menu wrapper-->
+    </div>
 
     <!--begin::Theme mode-->
     <div class="d-flex ms-3">
@@ -80,6 +101,7 @@
 import { getAssetPath } from "@/core/helpers/assets";
 import { defineComponent } from "vue";
 import KTThemeModeSwitcher from "@/layouts/default-layout/components/theme-mode/ThemeModeSwitcher.vue";
+import KTUserMenu from "@/layouts/default-layout/components/menus/UserAccountMenu.vue";
 import { useI18n } from "vue-i18n";
 import { useAuthStore } from "@/stores/auth";
 import { useRouter } from "vue-router";
@@ -88,6 +110,7 @@ export default defineComponent({
   name: "layout-topbar",
   components: {
     KTThemeModeSwitcher,
+    KTUserMenu,
   },
   setup() {
     const router = useRouter();

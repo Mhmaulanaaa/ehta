@@ -28,11 +28,7 @@
 
         <!--begin::Logo-->
         <a href="#" class="d-flex align-items-center">
-          <img
-            alt="Logo"
-            :src="getAssetPath('media/logos/demo7.svg')"
-            class="h-30px"
-          />
+          <img alt="Logo" :src="getAssetPath('media/logos/demo7.svg')" class="h-30px" />
         </a>
         <!--end::Logo-->
       </div>
@@ -55,12 +51,12 @@ import {
   headerFixedOnMobile,
   headerWidthFluid,
 } from "@/layouts/default-layout/config/helper";
-import KTIcon from "@/core/helpers/kt-icon/KTIcon.vue";
+// import KTIcon from "@/core/helpers/kt-icon/KTIcon.vue";
 
 export default defineComponent({
   name: "KTHeader",
   components: {
-    KTIcon,
+    // KTIcon,
     KTTopbar,
     PageTitle,
   },

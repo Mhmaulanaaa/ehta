@@ -122,61 +122,10 @@
       </div>
     </div>
 
-    <div
+    <!-- <div
       class="aside-footer d-flex flex-column align-items-center flex-column-auto"
       id="kt_aside_footer"
     >
-      <!-- <div class="d-flex align-items-center mb-2">
-        <div
-          class="btn btn-icon btn-active-color-primary btn-color-gray-500 btn-active-light"
-          data-kt-menu-trigger="click"
-          data-kt-menu-overflow="true"
-          data-kt-menu-placement="top-start"
-          data-kt-menu-flip="top-end"
-          data-bs-toggle="tooltip"
-          data-bs-placement="right"
-          data-bs-dismiss="click"
-          title="Quick links"
-        >
-          <KTIcon icon-name="element-plus" icon-class="fs-2 fs-lg-1" />
-        </div>
-        <KTQuickLinksMenu></KTQuickLinksMenu>
-      </div>
-
-      <div class="d-flex align-items-center mb-2">
-        <div
-          class="btn btn-icon btn-active-color-primary btn-color-gray-500 btn-active-light"
-          data-kt-menu-trigger="click"
-          data-kt-menu-overflow="true"
-          data-kt-menu-placement="top-start"
-          data-kt-menu-flip="top-end"
-          data-bs-toggle="tooltip"
-          data-bs-placement="right"
-          data-bs-dismiss="click"
-          title="Notifications"
-        >
-          <KTIcon icon-name="element-11" icon-class="fs-2 fs-lg-1" />
-        </div>
-        <KTNotificationsMenu></KTNotificationsMenu>
-      </div>
-
-      <div class="d-flex align-items-center mb-3">
-        <div
-          class="btn btn-icon btn-active-color-primary btn-color-gray-500 btn-active-light"
-          data-kt-menu-trigger="click"
-          data-kt-menu-overflow="true"
-          data-kt-menu-placement="top-start"
-          data-kt-menu-flip="top-end"
-          data-bs-toggle="tooltip"
-          data-bs-placement="right"
-          data-bs-dismiss="click"
-          title="Activity Logs"
-          id="kt_activities_toggle"
-        >
-          <KTIcon icon-name="chart-simple" icon-class="fs-2 fs-lg-1" />
-        </div>
-      </div> -->
-
       <div class="d-flex align-items-center mb-10" id="kt_header_user_menu_toggle">
         <div
           class="cursor-pointer symbol symbol-40px"
@@ -193,7 +142,7 @@
         </div>
         <KTUserMenu></KTUserMenu>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -202,14 +151,14 @@ import { getAssetPath } from "@/core/helpers/assets";
 import { defineComponent } from "vue";
 import KTQuickLinksMenu from "@/layouts/default-layout/components/menus/QuickLinksMenu.vue";
 import KTNotificationsMenu from "@/layouts/default-layout/components/menus/NotificationsMenu.vue";
-import KTUserMenu from "@/layouts/default-layout/components/menus/UserAccountMenu.vue";
+// import KTUserMenu from "@/layouts/default-layout/components/menus/UserAccountMenu.vue";
 
 export default defineComponent({
   name: "kt-aside-primary",
   components: {
     KTQuickLinksMenu,
     KTNotificationsMenu,
-    KTUserMenu,
+    // KTUserMenu,
   },
   setup() {
     const enableSecondarySidebar = () => {

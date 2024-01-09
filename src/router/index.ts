@@ -24,15 +24,15 @@ const routes: Array<RouteRecordRaw> = [
           breadcrumbs: ["Dashboards"],
         },
       },
-      {
-        path: "/builder",
-        name: "builder",
-        component: () => import("@/views/LayoutBuilder.vue"),
-        meta: {
-          pageTitle: "Layout Builder",
-          breadcrumbs: ["Layout"],
-        },
-      },
+      // {
+      //   path: "/builder",
+      //   name: "builder",
+      //   component: () => import("@/views/LayoutBuilder.vue"),
+      //   meta: {
+      //     pageTitle: "Layout Builder",
+      //     breadcrumbs: ["Layout"],
+      //   },
+      // },
       {
         path: "/master-user",
         name: "masteruser",
