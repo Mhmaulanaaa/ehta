@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import { reactive } from "vue";
+import KTModal1 from "@/layouts/default-layout/components/hta/modalsreviewer/_ModalLihatReviewer1.vue";
+import KTModal2 from "@/layouts/default-layout/components/hta/modalsreviewer/_ModalLihatReviewer2.vue";
+import KTModal3 from "@/layouts/default-layout/components/hta/modalsreviewer/_ModalLihatReviewer3.vue";
 const value = ref("");
 const dataModel = ref({
   optModel: "",
@@ -221,22 +224,13 @@ const form = reactive({
         <div class="card-toolbar">
           <div class="d-flex ms-3"></div>
           <a href="" class="btn btn-icon btn-light-warning me-1" target="_blank">
-            <KTIcon
-              icon-name="ki-duotone ki-printer"
-              icon-class="fs-2 fs-primary me-0 me-md"
-            />
+            <KTIcon icon-name="printer" icon-class="fs-2 fs-primary me-0 me-md" />
           </a>
           <a href="" class="btn btn-icon btn-light-primary me-1" target="_blank">
-            <KTIcon
-              icon-name="ki-duotone ki-document"
-              icon-class="fs-2 fs-primary me-0 me-md"
-            />
+            <KTIcon icon-name="document" icon-class="fs-2 fs-primary me-0 me-md" />
           </a>
           <a href="" class="btn btn-icon btn-light-danger" target="_blank">
-            <KTIcon
-              icon-name="ki-duotone ki-document"
-              icon-class="fs-2 fs-primary me-0 me-md"
-            />
+            <KTIcon icon-name="document" icon-class="fs-2 fs-primary me-0 me-md" />
           </a>
         </div>
       </div>
@@ -262,41 +256,111 @@ const form = reactive({
                   </thead>
                   <tbody class="text-center">
                     <tr class="fs-8">
-                      <td>ATK20230913001</td>
-                      <td>Pengajuan A/TK</td>
-                      <td>13 September 2023 10:55:07</td>
-                      <td>ROBOTIC GAIT TRAINING SYSTEM</td>
-                      <td>Instalasi Teknologi Komunikasi dan Informasi</td>
+                      <td>OBT20210531002</td>
+                      <td>Obat</td>
+                      <td>31 Mei 2021</td>
+                      <td>Simvastatin</td>
+                      <td>KSM Neurologi</td>
                       <td>Belum Diverifikasi</td>
                       <td class="">
                         <button
                           href=""
                           class="btn btn-icon btn-light-warning me-1"
-                          target="_blank"
+                          data-bs-toggle="modal"
+                          data-bs-target="#lihatreviewer3"
+                          id="#lihatreviewer3"
                         >
                           <KTIcon
-                            icon-name="ki-duotone ki-eye"
+                            icon-name="notepad-edit"
                             icon-class="fs-2 fs-primary me-0 me-md"
                           />
                         </button>
+                      </td>
+                    </tr>
+                    <tr class="fs-8">
+                      <td>OBT20210531003</td>
+                      <td>Obat</td>
+                      <td>31 Mei 2021</td>
+                      <td>Simvastatin</td>
+                      <td>KSM Neurologi</td>
+                      <td>Revisi Dokumen Lanjutan</td>
+                      <td class="">
                         <button
                           href=""
-                          class="btn btn-icon btn-light-primary me-1"
-                          target="_blank"
+                          class="btn btn-icon btn-light-warning me-1"
+                          data-bs-toggle="modal"
+                          data-bs-target="#lihatreviewer1"
+                          id="#lihatreviewer1"
                         >
                           <KTIcon
-                            icon-name="ki-duotone ki-document"
-                            icon-class="fs-2 fs-primary me-0 me-md"
+                            icon-name="eye"
+                            icon-class="fs-2 fs-warning me-0 me-md"
                           />
                         </button>
+                      </td>
+                    </tr>
+                    <tr class="fs-8">
+                      <td>OBT20210531004</td>
+                      <td>Obat</td>
+                      <td>31 Mei 2021</td>
+                      <td>Simvastatin</td>
+                      <td>KSM Neurologi</td>
+                      <td>Lolos Review</td>
+                      <td class="">
                         <button
                           href=""
-                          class="btn btn-icon btn-light-danger me-1"
-                          target="_blank"
+                          class="btn btn-icon btn-light-warning me-1"
+                          data-bs-toggle="modal"
+                          data-bs-target="#lihatreviewer1"
+                          id="#lihatreviewer1"
                         >
                           <KTIcon
-                            icon-name="ki-duotone ki-notepad-edit"
-                            icon-class="fs-2 fs-primary me-0 me-md"
+                            icon-name="eye"
+                            icon-class="fs-2 fs-warning me-0 me-md"
+                          />
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="fs-8">
+                      <td>PPK20210531003</td>
+                      <td>Alat/Teknologi Kesehatan</td>
+                      <td>31 Mei 2021</td>
+                      <td>ICD-10 : B.29</td>
+                      <td>KSM Neurologi</td>
+                      <td>Direkomendasikan</td>
+                      <td class="">
+                        <button
+                          href=""
+                          class="btn btn-icon btn-light-warning me-1"
+                          data-bs-toggle="modal"
+                          data-bs-target="#lihatreviewer1"
+                          id="#lihatreviewer1"
+                        >
+                          <KTIcon
+                            icon-name="eye"
+                            icon-class="fs-2 fs-warning me-0 me-md"
+                          />
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="fs-8">
+                      <td>PPK20210531004</td>
+                      <td>Dokumen PPK</td>
+                      <td>31 Mei 2021</td>
+                      <td>ICD-10 : B.29</td>
+                      <td>KSM Neurologi</td>
+                      <td>Ditolak</td>
+                      <td class="">
+                        <button
+                          href=""
+                          class="btn btn-icon btn-light-warning me-1"
+                          data-bs-toggle="modal"
+                          data-bs-target="#lihatreviewer1"
+                          id="#lihatreviewer1"
+                        >
+                          <KTIcon
+                            icon-name="eye"
+                            icon-class="fs-2 fs-warning me-0 me-md"
                           />
                         </button>
                       </td>
@@ -340,6 +404,9 @@ const form = reactive({
           </div>
         </div>
       </div>
+      <KTModal1></KTModal1>
+      <KTModal2></KTModal2>
+      <KTModal3></KTModal3>
     </div>
   </section>
 </template>

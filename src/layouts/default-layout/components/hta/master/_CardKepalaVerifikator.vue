@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import { reactive } from "vue";
+import KTModal1 from "@/layouts/default-layout/components/hta/modalspengaju/_ModalLihatPengaju1.vue";
+import KTModal4 from "@/layouts/default-layout/components/hta/modalspengaju/_ModalLihatPengaju4.vue";
+import KTModal5 from "@/layouts/default-layout/components/hta/modalspengaju/_ModalLihatPengaju5.vue";
 const value = ref("");
 const dataModel = ref({
   optModel: "",
@@ -204,22 +207,13 @@ const form = reactive({
         <div class="card-toolbar">
           <div class="d-flex ms-3"></div>
           <a href="" class="btn btn-icon btn-light-warning me-1" target="_blank">
-            <KTIcon
-              icon-name="ki-duotone ki-printer"
-              icon-class="fs-2 fs-primary me-0 me-md"
-            />
+            <KTIcon icon-name="printer" icon-class="fs-2 fs-primary me-0 me-md" />
           </a>
           <a href="" class="btn btn-icon btn-light-primary me-1" target="_blank">
-            <KTIcon
-              icon-name="ki-duotone ki-document"
-              icon-class="fs-2 fs-primary me-0 me-md"
-            />
+            <KTIcon icon-name="document" icon-class="fs-2 fs-primary me-0 me-md" />
           </a>
           <a href="" class="btn btn-icon btn-light-danger" target="_blank">
-            <KTIcon
-              icon-name="ki-duotone ki-document"
-              icon-class="fs-2 fs-primary me-0 me-md"
-            />
+            <KTIcon icon-name="document" icon-class="fs-2 fs-primary me-0 me-md" />
           </a>
         </div>
       </div>
@@ -245,40 +239,66 @@ const form = reactive({
                   </thead>
                   <tbody class="text-center">
                     <tr class="fs-8">
-                      <td>ATK20230913001</td>
-                      <td>Pengajuan A/TK</td>
-                      <td>13 September 2023 10:55:07</td>
-                      <td>ROBOTIC GAIT TRAINING SYSTEM</td>
-                      <td>Instalasi Teknologi Komunikasi dan Informasi</td>
+                      <td>OBT20210531002</td>
+                      <td>Obat</td>
+                      <td>31 Mei 2021</td>
+                      <td>Simvstatin</td>
+                      <td>KSM Neurologi</td>
                       <td>Belum Diverifikasi</td>
                       <td class="">
                         <button
                           href=""
                           class="btn btn-icon btn-light-warning me-1"
-                          target="_blank"
+                          data-bs-toggle="modal"
+                          data-bs-target="#lihatPengaju1"
+                          id="#lihatPengaju1"
                         >
                           <KTIcon
-                            icon-name="ki-duotone ki-eye"
+                            icon-name="eye"
                             icon-class="fs-2 fs-primary me-0 me-md"
                           />
                         </button>
+                      </td>
+                    </tr>
+                    <tr class="fs-8">
+                      <td>PPK20210531003</td>
+                      <td>Alat/Teknologi Kesehatan</td>
+                      <td>31 Mei 2021</td>
+                      <td>ICD-10 : B.29</td>
+                      <td>KSM Neurologi</td>
+                      <td>Direkomendasikan</td>
+                      <td class="">
                         <button
                           href=""
-                          class="btn btn-icon btn-light-primary me-1"
-                          target="_blank"
+                          class="btn btn-icon btn-light-warning me-1"
+                          data-bs-toggle="modal"
+                          data-bs-target="#lihatPengaju4"
+                          id="#lihatPengaju4"
                         >
                           <KTIcon
-                            icon-name="ki-duotone ki-document"
+                            icon-name="eye"
                             icon-class="fs-2 fs-primary me-0 me-md"
                           />
                         </button>
+                      </td>
+                    </tr>
+                    <tr class="fs-8">
+                      <td>PPK20210531003</td>
+                      <td>Dokumen PPK</td>
+                      <td>31 Mei 2021</td>
+                      <td>ICD-10 : B.29</td>
+                      <td>KSM Neurologi</td>
+                      <td>Ditolak</td>
+                      <td class="">
                         <button
                           href=""
-                          class="btn btn-icon btn-light-danger me-1"
-                          target="_blank"
+                          class="btn btn-icon btn-light-warning me-1"
+                          data-bs-toggle="modal"
+                          data-bs-target="#lihatPengaju4"
+                          id="#lihatPengaju4"
                         >
                           <KTIcon
-                            icon-name="ki-duotone ki-notepad-edit"
+                            icon-name="eye"
                             icon-class="fs-2 fs-primary me-0 me-md"
                           />
                         </button>
@@ -323,6 +343,9 @@ const form = reactive({
           </div>
         </div>
       </div>
+      <KTModal1></KTModal1>
+      <KTModal4></KTModal4>
+      <KTModal5></KTModal5>
     </div>
   </section>
 </template>

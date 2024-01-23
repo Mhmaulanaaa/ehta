@@ -48,8 +48,8 @@ const routes: Array<RouteRecordRaw> = [
         name: "informasi-pengaju",
         component: () => import("@/views/hta/InformasiPengaju.vue"),
         meta: {
-          pageTitle: "Pengajuan (Pengaju)",
-          breadcrumbs: ["Pengajuan(Pengaju)"],
+          pageTitle: "Pengajuan (Drafter)",
+          breadcrumbs: ["Pengajuan(Drafter)"],
         },
       },
       {

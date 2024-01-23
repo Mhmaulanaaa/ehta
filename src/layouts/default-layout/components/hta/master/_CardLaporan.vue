@@ -180,22 +180,13 @@ const form = reactive({
         <div class="card-toolbar">
           <div class="d-flex ms-3"></div>
           <a href="" class="btn btn-icon btn-light-warning me-1" target="_blank">
-            <KTIcon
-              icon-name="ki-duotone ki-printer"
-              icon-class="fs-2 fs-primary me-0 me-md"
-            />
+            <KTIcon icon-name="printer" icon-class="fs-2 fs-primary me-0 me-md" />
           </a>
           <a href="" class="btn btn-icon btn-light-primary me-1" target="_blank">
-            <KTIcon
-              icon-name="ki-duotone ki-document"
-              icon-class="fs-2 fs-primary me-0 me-md"
-            />
+            <KTIcon icon-name="document" icon-class="fs-2 fs-primary me-0 me-md" />
           </a>
           <a href="" class="btn btn-icon btn-light-danger" target="_blank">
-            <KTIcon
-              icon-name="ki-duotone ki-document"
-              icon-class="fs-2 fs-primary me-0 me-md"
-            />
+            <KTIcon icon-name="document" icon-class="fs-2 fs-primary me-0 me-md" />
           </a>
         </div>
       </div>
@@ -228,22 +219,12 @@ const form = reactive({
                       <td class="">
                         <button
                           href=""
-                          class="btn btn-icon btn-light-warning me-1"
+                          class="btn btn-icon btn-light-success me-1"
                           target="_blank"
                         >
                           <KTIcon
-                            icon-name="ki-duotone ki-notepad-edit"
-                            icon-class="fs-2 fs-primary me-0 me-md"
-                          />
-                        </button>
-                        <button
-                          href=""
-                          class="btn btn-icon btn-light-danger me-1"
-                          target="_blank"
-                        >
-                          <KTIcon
-                            icon-name="ki-duotone ki-abstract-11"
-                            icon-class="fs-2 fs-primary me-0 me-md"
+                            icon-name="book"
+                            icon-class="fs-2 fs-success me-0 me-md"
                           />
                         </button>
                       </td>

@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import KTModal1 from "@/layouts/default-layout/components/hta/modals/_TambahUser.vue";
+import KTModal2 from "@/layouts/default-layout/components/hta/modals/_EditUser.vue";
 import { ref } from "vue";
 import { Search } from "@element-plus/icons-vue";
 const value = ref("");
@@ -195,22 +196,13 @@ const isLoading = ref(false);
             </button>
           </div>
           <a href="" class="btn btn-icon btn-light-warning me-1" target="_blank">
-            <KTIcon
-              icon-name="ki-duotone ki-printer"
-              icon-class="fs-2 fs-primary me-0 me-md"
-            />
+            <KTIcon icon-name="printer" icon-class="fs-2 fs-primary me-0 me-md" />
           </a>
           <a href="" class="btn btn-icon btn-light-primary me-1" target="_blank">
-            <KTIcon
-              icon-name="ki-duotone ki-document"
-              icon-class="fs-2 fs-primary me-0 me-md"
-            />
+            <KTIcon icon-name="document" icon-class="fs-2 fs-primary me-0 me-md" />
           </a>
           <a href="" class="btn btn-icon btn-light-danger" target="_blank">
-            <KTIcon
-              icon-name="ki-duotone ki-document"
-              icon-class="fs-2 fs-primary me-0 me-md"
-            />
+            <KTIcon icon-name="document" icon-class="fs-2 fs-primary me-0 me-md" />
           </a>
         </div>
       </div>
@@ -253,12 +245,14 @@ const isLoading = ref(false);
                       <td>Aktif</td>
                       <td class="">
                         <button
-                          href=""
+                          type="button"
                           class="btn btn-icon btn-light-warning me-1"
-                          target="_blank"
+                          data-bs-toggle="modal"
+                          data-bs-target="#edituser"
+                          id="#edituser"
                         >
                           <KTIcon
-                            icon-name="ki-duotone ki-notepad-edit"
+                            icon-name="notepad-edit"
                             icon-class="fs-2 fs-primary me-0 me-md"
                           />
                         </button>
@@ -268,7 +262,7 @@ const isLoading = ref(false);
                           target="_blank"
                         >
                           <KTIcon
-                            icon-name="ki-duotone ki-abstract-11"
+                            icon-name="abstract-11"
                             icon-class="fs-2 fs-primary me-0 me-md"
                           />
                         </button>
@@ -314,5 +308,6 @@ const isLoading = ref(false);
       </div>
     </div>
     <KTModal1></KTModal1>
+    <KTModal2></KTModal2>
   </section>
 </template>

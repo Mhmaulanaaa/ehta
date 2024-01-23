@@ -48,7 +48,7 @@ const MainMenuConfig: Array<MenuItem> = [
         bootstrapIcon: "bi-layers",
       },
       {
-        heading: "Pengajuan(Kepala Verifikator)",
+        heading: "Pengajuan(Verifikator Kepala)",
         route: "/informasi-kepalaverifikator",
         keenthemesIcon: "message-edit",
         bootstrapIcon: "bi-layers",

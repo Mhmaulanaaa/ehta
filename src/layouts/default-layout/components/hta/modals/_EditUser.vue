@@ -103,6 +103,7 @@ const form = reactive({
   nik: "",
   jabatan: "",
   unitkerja: "",
+  namalengkap: "",
 });
 const radio = ref();
 </script>
@@ -111,7 +112,7 @@ const radio = ref();
     <div
       class="modal modal-lg fade"
       tabindex="-1"
-      id="tambahuser"
+      id="edituser"
       ref="newCardModalRef"
       data-bs-focus="false"
     >
@@ -122,7 +123,7 @@ const radio = ref();
               <div class="symbol">
                 <img src="/images/icon/profil.png" alt="" />
               </div>
-              &nbsp;Tambah User
+              &nbsp;Edit Master User
             </h3>
             <div
               class="btn btn-icon btn-sm btn-active-light-success ms-2"
@@ -170,40 +171,42 @@ const radio = ref();
           </div>
           <div class="modal-body">
             <div class="row g-xl-8">
-              <div class="col-6">
+              <div class="col-12">
                 <span>Nama Lengkap</span><br />
-                <el-select
-                  class="col-xl-12"
-                  v-model="dataModel.namalengkap"
-                  filterable
-                  placeholder="Pilih Nama Lengkap"
-                >
-                  <el-option
-                    v-for="item in optnamalengkap"
-                    :key="item.value"
-                    :label="item.label"
-                    :value="item.value"
-                  />
-                </el-select>
-              </div>
-              <div class="col-6">
-                <span>NIP/NIPTT-PK</span><br />
                 <el-form-item>
-                  <el-input v-model="form.nik" />
+                  <el-input v-model="form.namalengkap" />
                 </el-form-item>
               </div>
             </div>
             <div class="row g-xl-8">
-              <div class="col-6">
-                <span>Jabatan</span><br />
+              <div class="col-12">
+                <span>NIP/NIPTT-PK</span><br />
                 <el-form-item>
-                  <el-input v-model="form.jabatan" />
+                  <el-input v-model="form.nik" disabled placeholder="3901212909209020" />
                 </el-form-item>
               </div>
-              <div class="col-6">
+            </div>
+            <div class="row g-xl-8">
+              <div class="col-12">
+                <span>Jabatan</span><br />
+                <el-form-item>
+                  <el-input
+                    v-model="form.jabatan"
+                    disabled
+                    placeholder="Pengelola Teknologi Informasi"
+                  />
+                </el-form-item>
+              </div>
+            </div>
+            <div class="row g-xl-8">
+              <div class="col-12">
                 <span>Unit Kerja</span><br />
                 <el-form-item>
-                  <el-input v-model="form.unitkerja" />
+                  <el-input
+                    v-model="form.unitkerja"
+                    disabled
+                    placeholder="Informasi Teknologi Komunikasi dan Informasi"
+                  />
                 </el-form-item>
               </div>
             </div>

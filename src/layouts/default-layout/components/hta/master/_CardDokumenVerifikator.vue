@@ -204,22 +204,13 @@ const form = reactive({
         <div class="card-toolbar">
           <div class="d-flex ms-3"></div>
           <a href="" class="btn btn-icon btn-light-warning me-1" target="_blank">
-            <KTIcon
-              icon-name="ki-duotone ki-printer"
-              icon-class="fs-2 fs-primary me-0 me-md"
-            />
+            <KTIcon icon-name="printer" icon-class="fs-2 fs-primary me-0 me-md" />
           </a>
           <a href="" class="btn btn-icon btn-light-primary me-1" target="_blank">
-            <KTIcon
-              icon-name="ki-duotone ki-document"
-              icon-class="fs-2 fs-primary me-0 me-md"
-            />
+            <KTIcon icon-name="document" icon-class="fs-2 fs-primary me-0 me-md" />
           </a>
           <a href="" class="btn btn-icon btn-light-danger" target="_blank">
-            <KTIcon
-              icon-name="ki-duotone ki-document"
-              icon-class="fs-2 fs-primary me-0 me-md"
-            />
+            <KTIcon icon-name="document" icon-class="fs-2 fs-primary me-0 me-md" />
           </a>
         </div>
       </div>
@@ -244,40 +235,77 @@ const form = reactive({
                   </thead>
                   <tbody class="text-center">
                     <tr class="fs-8">
-                      <td>ATK20230913001</td>
-                      <td>13 September 2023 10:55:07</td>
-                      <td>Pengajuan A/TK</td>
-                      <td>ROBOTIC GAIT TRAINING SYSTEM</td>
-                      <td>Instalasi Teknologi Komunikasi dan Informasi</td>
+                      <td>ATK20210531001</td>
+                      <td>31 Mei 2021</td>
+                      <td>SOMATOM Confidence RT Pro</td>
+                      <td>Alat/Teknologi Kesehatan</td>
+                      <td>KSM Andrologi</td>
                       <td class="">
                         <button
-                          href=""
-                          class="btn btn-icon btn-light-warning me-1"
+                          href="/dokumen/Contohh.pdf"
+                          class="btn btn-icon btn-light-success me-1"
                           target="_blank"
                         >
                           <KTIcon
-                            icon-name="ki-duotone ki-eye"
-                            icon-class="fs-2 fs-primary me-0 me-md"
+                            icon-name="book-open"
+                            icon-class="fs-2 fs-success me-0 me-md"
                           />
                         </button>
+                      </td>
+                    </tr>
+                    <tr class="fs-8">
+                      <td>ATK20210531002</td>
+                      <td>31 Mei 2021</td>
+                      <td>SOMATOM Confidence RT Pro</td>
+                      <td>Alat/Teknologi Kesehatan</td>
+                      <td>KSM Andrologi</td>
+                      <td class="">
                         <button
-                          href=""
-                          class="btn btn-icon btn-light-primary me-1"
+                          href="/dokumen/Contohh.pdf"
+                          class="btn btn-icon btn-light-success me-1"
                           target="_blank"
                         >
                           <KTIcon
-                            icon-name="ki-duotone ki-document"
-                            icon-class="fs-2 fs-primary me-0 me-md"
+                            icon-name="book-open"
+                            icon-class="fs-2 fs-success me-0 me-md"
                           />
                         </button>
+                      </td>
+                    </tr>
+                    <tr class="fs-8">
+                      <td>ATK20210531003</td>
+                      <td>31 Mei 2021</td>
+                      <td>SOMATOM Confidence RT Pro</td>
+                      <td>Alat/Teknologi Kesehatan</td>
+                      <td>KSM Andrologi</td>
+                      <td class="">
                         <button
-                          href=""
-                          class="btn btn-icon btn-light-danger me-1"
+                          href="/dokumen/Contohh.pdf"
+                          class="btn btn-icon btn-light-success me-1"
                           target="_blank"
                         >
                           <KTIcon
-                            icon-name="ki-duotone ki-notepad-edit"
-                            icon-class="fs-2 fs-primary me-0 me-md"
+                            icon-name="book-open"
+                            icon-class="fs-2 fs-success me-0 me-md"
+                          />
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="fs-8">
+                      <td>ATK20210531004</td>
+                      <td>31 Mei 2021</td>
+                      <td>SOMATOM Confidence RT Pro</td>
+                      <td>Alat/Teknologi Kesehatan</td>
+                      <td>KSM Andrologi</td>
+                      <td class="">
+                        <button
+                          href="/dokumen/Contohh.pdf"
+                          class="btn btn-icon btn-light-success me-1"
+                          target="_blank"
+                        >
+                          <KTIcon
+                            icon-name="book-open"
+                            icon-class="fs-2 fs-success me-0 me-md"
                           />
                         </button>
                       </td>

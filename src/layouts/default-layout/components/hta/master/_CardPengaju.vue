@@ -1,6 +1,14 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import { reactive } from "vue";
+import KTModal from "@/layouts/default-layout/components/hta/modalspengaju/_ModalLihatPengaju.vue";
+import KTModal1 from "@/layouts/default-layout/components/hta/modalspengaju/_ModalLihatPengaju1.vue";
+import KTModal2 from "@/layouts/default-layout/components/hta/modalspengaju/_ModalLihatPengaju2.vue";
+import KTModal3 from "@/layouts/default-layout/components/hta/modalspengaju/_ModalLihatPengaju3.vue";
+import KTModal4 from "@/layouts/default-layout/components/hta/modalspengaju/_ModalLihatPengaju4.vue";
+import KTModal5 from "@/layouts/default-layout/components/hta/modalspengaju/_ModalLihatPengaju5.vue";
+import KTModal6 from "@/layouts/default-layout/components/hta/modalspengaju/_ModalLihatPengaju6.vue";
+import KTModal7 from "@/layouts/default-layout/components/hta/modalspengaju/_ModalLihatPengaju7.vue";
 const value = ref("");
 const dataModel = ref({
   optModel: "",
@@ -167,22 +175,13 @@ const form = reactive({
         <div class="card-toolbar">
           <div class="d-flex ms-3"></div>
           <a href="" class="btn btn-icon btn-light-warning me-1" target="_blank">
-            <KTIcon
-              icon-name="ki-duotone ki-printer"
-              icon-class="fs-2 fs-primary me-0 me-md"
-            />
+            <KTIcon icon-name="printer" icon-class="fs-2 fs-primary me-0 me-md" />
           </a>
           <a href="" class="btn btn-icon btn-light-primary me-1" target="_blank">
-            <KTIcon
-              icon-name="ki-duotone ki-document"
-              icon-class="fs-2 fs-primary me-0 me-md"
-            />
+            <KTIcon icon-name="document" icon-class="fs-2 fs-primary me-0 me-md" />
           </a>
           <a href="" class="btn btn-icon btn-light-danger" target="_blank">
-            <KTIcon
-              icon-name="ki-duotone ki-document"
-              icon-class="fs-2 fs-primary me-0 me-md"
-            />
+            <KTIcon icon-name="document" icon-class="fs-2 fs-primary me-0 me-md" />
           </a>
         </div>
       </div>
@@ -206,28 +205,20 @@ const form = reactive({
                   </thead>
                   <tbody class="text-center">
                     <tr class="fs-8">
-                      <td>1</td>
-                      <td>10.00</td>
-                      <td>Pengaju 1</td>
-                      <td>Belum Diverifikasi</td>
+                      <td>ATK20210531001</td>
+                      <td>02 Januari 2024</td>
+                      <td>SOMATOM Confidence RT Pro</td>
+                      <td>Draf</td>
                       <td class="">
                         <button
                           href=""
                           class="btn btn-icon btn-light-warning me-1"
-                          target="_blank"
+                          data-bs-toggle="modal"
+                          data-bs-target="#lihatPengaju"
+                          id="#lihatPengaju"
                         >
                           <KTIcon
-                            icon-name="ki-duotone ki-eye"
-                            icon-class="fs-2 fs-primary me-0 me-md"
-                          />
-                        </button>
-                        <button
-                          href=""
-                          class="btn btn-icon btn-light-primary me-1"
-                          target="_blank"
-                        >
-                          <KTIcon
-                            icon-name="ki-duotone ki-document"
+                            icon-name="eye"
                             icon-class="fs-2 fs-primary me-0 me-md"
                           />
                         </button>
@@ -237,7 +228,217 @@ const form = reactive({
                           target="_blank"
                         >
                           <KTIcon
-                            icon-name="ki-duotone ki-notepad-edit"
+                            icon-name="abstract-11"
+                            icon-class="fs-2 fs-primary me-0 me-md"
+                          />
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="fs-8">
+                      <td>ATK20210531002</td>
+                      <td>02 Januari 2024</td>
+                      <td>SOMATOM Confidence RT Pro 4</td>
+                      <td>Belum Diverifikasi</td>
+                      <td class="">
+                        <button
+                          href=""
+                          class="btn btn-icon btn-light-warning me-1"
+                          data-bs-toggle="modal"
+                          data-bs-target="#lihatPengaju"
+                          id="#lihatPengaju"
+                        >
+                          <KTIcon
+                            icon-name="eye"
+                            icon-class="fs-2 fs-primary me-0 me-md"
+                          />
+                        </button>
+                        <button
+                          href=""
+                          class="btn btn-icon btn-light-danger me-1"
+                          target="_blank"
+                        >
+                          <KTIcon
+                            icon-name="pencil"
+                            icon-class="fs-2 fs-primary me-0 me-md"
+                          />
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="fs-8">
+                      <td>ATK20210531003</td>
+                      <td>02 Januari 2024</td>
+                      <td>SOMATOM Confidence RT Pro 4</td>
+                      <td>Revisi Dokumen Awal</td>
+                      <td class="">
+                        <button
+                          href=""
+                          class="btn btn-icon btn-light-warning me-1"
+                          data-bs-toggle="modal"
+                          data-bs-target="#lihatPengaju6"
+                          id="#lihatPengaju6"
+                        >
+                          <KTIcon
+                            icon-name="eye"
+                            icon-class="fs-2 fs-primary me-0 me-md"
+                          />
+                        </button>
+                        <button
+                          href=""
+                          class="btn btn-icon btn-light-danger me-1"
+                          target="_blank"
+                        >
+                          <KTIcon
+                            icon-name="notepad-edit"
+                            icon-class="fs-2 fs-primary me-0 me-md"
+                          />
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="fs-8">
+                      <td>ATK20210531004</td>
+                      <td>02 Januari 2024</td>
+                      <td>SOMATOM Confidence RT Pro 4</td>
+                      <td>Lolos Verifikasi</td>
+                      <td class="">
+                        <button
+                          href=""
+                          class="btn btn-icon btn-light-warning me-1"
+                          data-bs-toggle="modal"
+                          data-bs-target="#lihatPengaju3"
+                          id="#lihatPengaju3"
+                        >
+                          <KTIcon
+                            icon-name="eye"
+                            icon-class="fs-2 fs-primary me-0 me-md"
+                          />
+                        </button>
+                        <button
+                          href=""
+                          class="btn btn-icon btn-light-danger me-1"
+                          target="_blank"
+                        >
+                          <KTIcon
+                            icon-name="pencil"
+                            icon-class="fs-2 fs-primary me-0 me-md"
+                          />
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="fs-8">
+                      <td>ATK20210531005</td>
+                      <td>02 Januari 2024</td>
+                      <td>SOMATOM Confidence RT Pro 4</td>
+                      <td>Revisi Dokumen Lanjutan</td>
+                      <td class="">
+                        <button
+                          href=""
+                          class="btn btn-icon btn-light-warning me-1"
+                          data-bs-toggle="modal"
+                          data-bs-target="#lihatPengaju6"
+                          id="#lihatPengaju6"
+                        >
+                          <KTIcon
+                            icon-name="eye"
+                            icon-class="fs-2 fs-primary me-0 me-md"
+                          />
+                        </button>
+                        <button
+                          href=""
+                          class="btn btn-icon btn-light-danger me-1"
+                          target="_blank"
+                        >
+                          <KTIcon
+                            icon-name="notepad-edit"
+                            icon-class="fs-2 fs-primary me-0 me-md"
+                          />
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="fs-8">
+                      <td>ATK20210531005</td>
+                      <td>02 Januari 2024</td>
+                      <td>SOMATOM Confidence RT Pro 4</td>
+                      <td>Lolos Review</td>
+                      <td class="">
+                        <button
+                          href=""
+                          class="btn btn-icon btn-light-warning me-1"
+                          data-bs-toggle="modal"
+                          data-bs-target="#lihatPengaju3"
+                          id="#lihatPengaju3"
+                        >
+                          <KTIcon
+                            icon-name="eye"
+                            icon-class="fs-2 fs-primary me-0 me-md"
+                          />
+                        </button>
+                        <button
+                          href=""
+                          class="btn btn-icon btn-light-danger me-1"
+                          target="_blank"
+                        >
+                          <KTIcon
+                            icon-name="pencil"
+                            icon-class="fs-2 fs-primary me-0 me-md"
+                          />
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="fs-8">
+                      <td>ATK20210531005</td>
+                      <td>02 Januari 2024</td>
+                      <td>SOMATOM Confidence RT Pro 4</td>
+                      <td>Direkomendasikan</td>
+                      <td class="">
+                        <button
+                          href=""
+                          class="btn btn-icon btn-light-warning me-1"
+                          data-bs-toggle="modal"
+                          data-bs-target="#lihatPengaju4"
+                          id="#lihatPengaju4"
+                        >
+                          <KTIcon
+                            icon-name="eye"
+                            icon-class="fs-2 fs-primary me-0 me-md"
+                          />
+                        </button>
+                        <button
+                          href=""
+                          class="btn btn-icon btn-light-danger me-1"
+                          target="_blank"
+                        >
+                          <KTIcon
+                            icon-name="pencil"
+                            icon-class="fs-2 fs-primary me-0 me-md"
+                          />
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="fs-8">
+                      <td>ATK20210531005</td>
+                      <td>02 Januari 2024</td>
+                      <td>SOMATOM Confidence RT Pro 4</td>
+                      <td>Ditolak</td>
+                      <td class="">
+                        <button
+                          href=""
+                          class="btn btn-icon btn-light-warning me-1"
+                          data-bs-toggle="modal"
+                          data-bs-target="#lihatPengaju7"
+                          id="#lihatPengaju7"
+                        >
+                          <KTIcon
+                            icon-name="eye"
+                            icon-class="fs-2 fs-primary me-0 me-md"
+                          />
+                        </button>
+                        <button
+                          href=""
+                          class="btn btn-icon btn-light-danger me-1"
+                          target="_blank"
+                        >
+                          <KTIcon
+                            icon-name="pencil"
                             icon-class="fs-2 fs-primary me-0 me-md"
                           />
                         </button>
@@ -282,6 +483,14 @@ const form = reactive({
           </div>
         </div>
       </div>
+      <KTModal></KTModal>
+      <KTModal1></KTModal1>
+      <KTModal2></KTModal2>
+      <KTModal3></KTModal3>
+      <KTModal4></KTModal4>
+      <KTModal5></KTModal5>
+      <KTModal6></KTModal6>
+      <KTModal7></KTModal7>
     </div>
   </section>
 </template>

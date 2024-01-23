@@ -1,6 +1,10 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import { reactive } from "vue";
+import KTModal1 from "@/layouts/default-layout/components/hta/modalverifikator/_ModalVerifikator.vue";
+import KTModal2 from "@/layouts/default-layout/components/hta/modalverifikator/_ModalVerifikator1.vue";
+import KTModal3 from "@/layouts/default-layout/components/hta/modalverifikator/_ModalVerifikator2.vue";
+import KTModal4 from "@/layouts/default-layout/components/hta/modalverifikator/_ModalVerifikator3.vue";
 const value = ref("");
 const dataModel = ref({
   optModel: "",
@@ -204,22 +208,13 @@ const form = reactive({
         <div class="card-toolbar">
           <div class="d-flex ms-3"></div>
           <a href="" class="btn btn-icon btn-light-warning me-1" target="_blank">
-            <KTIcon
-              icon-name="ki-duotone ki-printer"
-              icon-class="fs-2 fs-primary me-0 me-md"
-            />
+            <KTIcon icon-name="printer" icon-class="fs-2 fs-primary me-0 me-md" />
           </a>
           <a href="" class="btn btn-icon btn-light-primary me-1" target="_blank">
-            <KTIcon
-              icon-name="ki-duotone ki-document"
-              icon-class="fs-2 fs-primary me-0 me-md"
-            />
+            <KTIcon icon-name="document" icon-class="fs-2 fs-primary me-0 me-md" />
           </a>
           <a href="" class="btn btn-icon btn-light-danger" target="_blank">
-            <KTIcon
-              icon-name="ki-duotone ki-document"
-              icon-class="fs-2 fs-primary me-0 me-md"
-            />
+            <KTIcon icon-name="document" icon-class="fs-2 fs-primary me-0 me-md" />
           </a>
         </div>
       </div>
@@ -245,18 +240,20 @@ const form = reactive({
                   <tbody class="text-center">
                     <tr class="fs-8">
                       <td>ATK20230913001</td>
-                      <td>Pengajuan A/TK</td>
-                      <td>13 September 2023 10:55:07</td>
-                      <td>ROBOTIC GAIT TRAINING SYSTEM</td>
+                      <td>Alat/Teknologi Kesehatan</td>
+                      <td>30 Mei 2021</td>
+                      <td>SOMATOM CONFIDENCE RT Pro</td>
                       <td>Belum Diverifikasi</td>
                       <td class="">
                         <button
                           href=""
                           class="btn btn-icon btn-light-warning me-1"
-                          target="_blank"
+                          data-bs-toggle="modal"
+                          data-bs-target="#lihatverifikator"
+                          id="#lihatverifikator"
                         >
                           <KTIcon
-                            icon-name="ki-duotone ki-eye"
+                            icon-name="eye"
                             icon-class="fs-2 fs-primary me-0 me-md"
                           />
                         </button>
@@ -266,7 +263,7 @@ const form = reactive({
                           target="_blank"
                         >
                           <KTIcon
-                            icon-name="ki-duotone ki-document"
+                            icon-name="document"
                             icon-class="fs-2 fs-primary me-0 me-md"
                           />
                         </button>
@@ -276,7 +273,130 @@ const form = reactive({
                           target="_blank"
                         >
                           <KTIcon
-                            icon-name="ki-duotone ki-notepad-edit"
+                            icon-name="notepad-edit"
+                            icon-class="fs-2 fs-primary me-0 me-md"
+                          />
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="fs-8">
+                      <td>PPK20210531003</td>
+                      <td>Revisi Dokumen PPK</td>
+                      <td>30 Mei 2021</td>
+                      <td>ICD-10 : B-29</td>
+                      <td>Revisi Dokumen Awal</td>
+                      <td class="">
+                        <button
+                          href=""
+                          class="btn btn-icon btn-light-warning me-1"
+                          data-bs-toggle="modal"
+                          data-bs-target="#lihatverifikator1"
+                          id="#lihatverifikator1"
+                        >
+                          <KTIcon
+                            icon-name="eye"
+                            icon-class="fs-2 fs-primary me-0 me-md"
+                          />
+                        </button>
+                        <button
+                          href=""
+                          class="btn btn-icon btn-light-primary me-1"
+                          target="_blank"
+                        >
+                          <KTIcon
+                            icon-name="document"
+                            icon-class="fs-2 fs-primary me-0 me-md"
+                          />
+                        </button>
+                        <button
+                          href=""
+                          class="btn btn-icon btn-light-danger me-1"
+                          target="_blank"
+                        >
+                          <KTIcon
+                            icon-name="notepad-edit"
+                            icon-class="fs-2 fs-primary me-0 me-md"
+                          />
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="fs-8">
+                      <td>OBT20210531002</td>
+                      <td>Obat</td>
+                      <td>30 Mei 2021</td>
+                      <td>Simvastatin</td>
+                      <td>Lolos Verifikasi</td>
+                      <td class="">
+                        <button
+                          href=""
+                          class="btn btn-icon btn-light-warning me-1"
+                          data-bs-toggle="modal"
+                          data-bs-target="#lihatverifikator3"
+                          id="#lihatverifikator3"
+                        >
+                          <KTIcon
+                            icon-name="eye"
+                            icon-class="fs-2 fs-primary me-0 me-md"
+                          />
+                        </button>
+                        <button
+                          href=""
+                          class="btn btn-icon btn-light-primary me-1"
+                          target="_blank"
+                        >
+                          <KTIcon
+                            icon-name="document"
+                            icon-class="fs-2 fs-primary me-0 me-md"
+                          />
+                        </button>
+                        <button
+                          href=""
+                          class="btn btn-icon btn-light-danger me-1"
+                          target="_blank"
+                        >
+                          <KTIcon
+                            icon-name="notepad-edit"
+                            icon-class="fs-2 fs-primary me-0 me-md"
+                          />
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="fs-8">
+                      <td>PPK20210531003</td>
+                      <td>Revisi Dokumen PPK</td>
+                      <td>30 Mei 2021</td>
+                      <td>ICD-10 : B.29</td>
+                      <td>Verifikasi Revisi Dokumen Lanjutan</td>
+                      <td class="">
+                        <button
+                          href=""
+                          class="btn btn-icon btn-light-warning me-1"
+                          data-bs-toggle="modal"
+                          data-bs-target="#lihatverifikator3"
+                          id="#lihatverifikator3"
+                        >
+                          <KTIcon
+                            icon-name="eye"
+                            icon-class="fs-2 fs-primary me-0 me-md"
+                          />
+                        </button>
+                        <button
+                          href=""
+                          class="btn btn-icon btn-light-primary me-1"
+                          target="_blank"
+                        >
+                          <KTIcon
+                            icon-name="document"
+                            icon-class="fs-2 fs-primary me-0 me-md"
+                          />
+                        </button>
+                        <button
+                          href=""
+                          class="btn btn-icon btn-light-danger me-1"
+                          target="_blank"
+                        >
+                          <KTIcon
+                            icon-name="notepad-edit"
                             icon-class="fs-2 fs-primary me-0 me-md"
                           />
                         </button>
@@ -321,6 +441,10 @@ const form = reactive({
           </div>
         </div>
       </div>
+      <KTModal1></KTModal1>
+      <KTModal2></KTModal2>
+      <KTModal3></KTModal3>
+      <KTModal4></KTModal4>
     </div>
   </section>
 </template>
