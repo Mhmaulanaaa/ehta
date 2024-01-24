@@ -213,6 +213,7 @@ const radio = ref();
                 <el-select
                   class="col-xl-12"
                   v-model="dataModel.hakakses"
+                  multiple
                   filterable
                   placeholder="Pilih Hak Akses"
                 >
