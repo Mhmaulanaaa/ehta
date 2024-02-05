@@ -11,6 +11,19 @@ const dataModel = ref({
   status: "",
   nama: "",
 });
+
+const pageSize = ref("5");
+const currentPage = ref("10");
+const small = ref(false);
+const background = ref(false);
+const disabled = ref(false);
+
+const handleSizeChange = (val: number) => {
+  console.log(`${val} items per page`);
+};
+const handleCurrentChange = (val: number) => {
+  console.log(`current page: ${val}`);
+};
 const optunitkerja = [
   {
     value: "Instalasi Teknologi Komunikasi & Informasi",
@@ -304,6 +317,20 @@ const isLoading = ref(false);
               </path>
             </svg>
           </div>
+        </div>
+        <div class="float-end">
+          <el-pagination
+            v-model:current-page="currentPage"
+            v-model:page-size="pageSize"
+            :page-sizes="[100, 200]"
+            :small="small"
+            :disabled="disabled"
+            :background="background"
+            layout="prev, pager, next, sizes"
+            :total="400"
+            @size-change="handleSizeChange"
+            @current-change="handleCurrentChange"
+          />
         </div>
       </div>
     </div>
