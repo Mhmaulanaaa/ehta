@@ -26,19 +26,19 @@
             </div>
 
             <div class="tab-pane fade active" role="tabpanel">
-              <router-link to="/builder">
-                <h2 class="fs-4 fw-bold mb-7">Selamat Pagi</h2>
-                <CardSidebar></CardSidebar>
-              </router-link>
-              <KTMenu></KTMenu>
-            </div>
-
-            <div class="tab-pane fade" role="tabpanel">
               <router-link to="/master-user">
                 <h2 class="fs-4 fw-bold mb-7">Selamat Pagi</h2>
                 <CardSidebar></CardSidebar>
+                <KTMenu></KTMenu>
               </router-link>
-              <KTMenu></KTMenu>
+            </div>
+
+            <div class="tab-pane fade" role="tabpanel">
+              <router-link to="/transaksi-atk">
+                <h2 class="fs-4 fw-bold mb-7">Selamat Pagi</h2>
+                <CardSidebar></CardSidebar>
+                <KTMenu></KTMenu>
+              </router-link>
               <!-- <KTTasksOverview></KTTasksOverview> -->
             </div>
 
@@ -47,16 +47,20 @@
               id="kt_aside_nav_tab_notifications"
               role="tabpanel"
             >
-              <h2 class="fs-4 fw-bold mb-7">Selamat Pagi</h2>
-              <CardSidebar></CardSidebar>
-              <KTMenu></KTMenu>
+              <router-link to="/transaksi-atk">
+                <h2 class="fs-4 fw-bold mb-7">Selamat Pagi</h2>
+                <CardSidebar></CardSidebar>
+                <KTMenu></KTMenu>
+              </router-link>
               <!-- <KTNotifications></KTNotifications> -->
             </div>
 
-            <div class="tab-pane fade" id="kt_aside_nav_tab_authors" role="tabpanel">
-              <h2 class="fs-4 fw-bold mb-7">Selamat Pagi</h2>
-              <CardSidebar></CardSidebar>
-              <KTMenu></KTMenu>
+            <div class="tab-pane fade" role="tabpanel">
+              <router-link to="/laporan">
+                <h2 class="fs-4 fw-bold mb-7">Selamat Pagi</h2>
+                <CardSidebar></CardSidebar>
+                <KTMenu></KTMenu>
+              </router-link>
               <!-- <KTAuthors></KTAuthors> -->
             </div>
           </div>

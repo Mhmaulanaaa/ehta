@@ -56,7 +56,7 @@
               class="nav-link btn btn-icon btn-active-color-primary btn-color-gray-500 btn-active-light"
               data-bs-toggle="tab"
             >
-              <router-link to="/builder">
+              <router-link to="/master-user">
                 <KTIcon icon-name="book-square" icon-class="fs-2x" />
               </router-link>
             </div>
@@ -75,7 +75,7 @@
               class="nav-link btn btn-icon btn-active-color-primary btn-color-gray-500 btn-active-light"
               data-bs-toggle="tab"
             >
-              <router-link to="/master-user">
+              <router-link to="/transaksi-atk">
                 <KTIcon icon-name="two-credit-cart" icon-class="fs-2x" />
               </router-link>
             </div>
@@ -93,9 +93,10 @@
             <div
               class="nav-link btn btn-icon btn-active-color-primary btn-color-gray-500 btn-active-light"
               data-bs-toggle="tab"
-              href="#kt_aside_nav_tab_notifications"
             >
-              <KTIcon icon-name="tablet-text-down" icon-class="fs-2x" />
+              <router-link to="/informasi-pengaju">
+                <KTIcon icon-name="tablet-text-down" icon-class="fs-2x" />
+              </router-link>
             </div>
           </li>
 
@@ -111,7 +112,6 @@
             <div
               class="nav-link btn btn-icon btn-active-color-primary btn-color-gray-500 btn-active-light"
               data-bs-toggle="tab"
-              href="#kt_aside_nav_tab_authors"
             >
               <router-link to="/laporan">
                 <KTIcon icon-name="document" icon-class="fs-2x" />
