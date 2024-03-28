@@ -172,6 +172,9 @@ export default {
                     <TextEditor :label="'Jumlah Kasus'"></TextEditor>
                   </div>
                 </div>
+                <button type="button" class="btn btn-danger float-start mt-5">
+                  Simpan Sebagai Draft
+                </button>
               </template>
               <template v-if="currentTabIndex === 1">
                 <h5 class="text-center">Panduan Level of Evidence</h5>
@@ -255,6 +258,9 @@ export default {
                     </table>
                   </div>
                 </Transition>
+                <button type="button" class="btn btn-danger float-start mt-5">
+                  Simpan Sebagai Draft
+                </button>
               </template>
               <template v-if="currentTabIndex === 2">
                 <div class="d-flex mt-5">
@@ -321,6 +327,9 @@ export default {
                     </table>
                   </div>
                 </Transition>
+                <button type="button" class="btn btn-danger float-start mt-5">
+                  Simpan Sebagai Draft
+                </button>
               </template>
               <template v-if="currentTabIndex === 3">
                 <Transition>
@@ -379,6 +388,9 @@ export default {
                     </table>
                   </div>
                 </Transition>
+                <button type="button" class="btn btn-danger float-start mt-5">
+                  Simpan Sebagai Draft
+                </button>
               </template>
               <template v-if="currentTabIndex === 4">
                 <h4>Data Pengusul</h4>
@@ -518,6 +530,9 @@ export default {
                     </table>
                   </div>
                 </Transition>
+                <button type="button" class="btn btn-danger float-start mt-5">
+                  Simpan Sebagai Draft
+                </button>
               </template>
             </Wizard>
           </div>
